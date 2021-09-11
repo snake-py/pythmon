@@ -1,0 +1,5 @@
+{
+    "PYTHMON_WATCH_PATH": "../test_project",
+    "PYTHMON_RUN": "python ../test_project/some.py",
+    "PYTHMON_IGNORE": ["^.*.pyc$", "^__pycache__"]
+}

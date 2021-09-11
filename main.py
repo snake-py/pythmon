@@ -19,7 +19,6 @@ default_configs = {
 }
 
 
-
 def get_configs():
     with open("./pythmon.json") as json_config:
         try:

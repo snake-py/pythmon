@@ -1,1 +1,7 @@
-watchdog
+click==8.0.1
+colorama==0.4.4
+commonmark==0.9.1
+pyfiglet==0.8.post1
+Pygments==2.10.0
+rich==10.9.0
+watchdog==2.1.5

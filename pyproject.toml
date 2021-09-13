@@ -1,0 +1,5 @@
+[build-system]
+requires = [
+    "watchdog==2.1.5",
+]
+build-backend = "setuptools.build_meta"

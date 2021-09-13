@@ -1,6 +1,7 @@
 {
     "PYTHMON_WATCH_PATH": "../test_project",
     "PYTHMON_IGNORE": ["^.*.pyc$", "^__pycache__"],
+    "PYTHMON_RUN": "python ../test_project/some.py",
     "PYTHMON_SCRIPTS": {
         "script1": {
             "ON_ANY_EVENT": "python ../test_project/some.py",

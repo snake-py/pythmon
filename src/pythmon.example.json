@@ -1,0 +1,23 @@
+{
+    "PYTHMON_WATCH_PATH": "../my_project",
+    "PYTHMON_IGNORE": ["^.*.pyc$", "^__pycache__"],
+    "PYTHMON_RUN": "python main.py",
+    "PYTHMON_SCRIPTS": {
+        "script1": {
+            "ON_ANY_EVENT": "python main.py",
+            "ON_DELETED": "",
+            "ON_MODIFIED": "",
+            "ON_CREATED": "",
+            "ON_MOVED": "",
+            "OWN_CLASS": ""
+        },
+        "script2": {
+            "ON_ANY_EVENT": "python manage.py test", 
+            "ON_DELETED": "",
+            "ON_MODIFIED": "",
+            "ON_CREATED": "",
+            "ON_MOVED": "",
+            "OWN_CLASS": ""
+        }
+    }
+}

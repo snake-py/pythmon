@@ -1,4 +1,5 @@
 ## Core libraries
+import os
 import json
 
 ## Error Imports 
@@ -12,14 +13,16 @@ default_configs = {
 }
 
 def get_configs():
-    with open("./pythmon.json") as json_config:
-        try:
-            return json.load(json_config)
-        except JSONDecodeError:
-            print("---- WARNING ----")
-            print("PYTHMON IS running on default settings since you pythmon.json is not correct.")
-            return default_configs
+    if os.path.isfile(f"{os.getcwd()}/pythmon.json"):
+            
+        with open(f"{os.getcwd()}/pythmon.json") as json_config:
+            try:
+                return json.load(json_config)
+            except JSONDecodeError:
+                print("---- WARNING ----")
+    print("PYTHMON IS running on default settings.")
+    return default_configs
 
 
-
-configs = get_configs()
+if __name__ == '__main__':
+    print(os.getcwd())
